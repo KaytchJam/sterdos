@@ -1,0 +1,7 @@
+
+export const AVG_WALK_DISTANCE_METERS_PER_SECONDS: number = 1.27;
+export const SECS_PER_MINUTE: number = 60;
+export const WALKING_MINUTES: number = 15;
+export const MEAN_EARTH_RADIUS: number = 6_371_000;
+export const TO_RADIANS: number = Math.PI / 180;
+export const FIFTEEN_MINUTE_AVG_WALKING_DISTANCE_METERS = AVG_WALK_DISTANCE_METERS_PER_SECONDS * SECS_PER_MINUTE * WALKING_MINUTES;
