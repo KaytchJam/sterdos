@@ -35,6 +35,8 @@ RUN \
   elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run build; \
   else echo "Lockfile not found." && exit 1; \
   fi
+  
+RUN ls
 
 # Production image, copy all the files and run next
 FROM base AS runner
@@ -52,7 +54,11 @@ COPY --from=builder /app/public ./public
 # Automatically leverage output traces to reduce image size
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/
+
+RUN ls
+
+COPY --from=builder --chown=nextjs:nodejs /app/data ./data
 
 USER nextjs
 

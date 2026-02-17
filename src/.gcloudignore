@@ -1,0 +1,7 @@
+# Standard ignores
+.git
+.next
+node_modules
+
+# Force include the data folder even if it's in .gitignore
+!data/
