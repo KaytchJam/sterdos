@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import db from "@/lib/server/db"
+import { get_database } from "@/lib/server/db"
 import { StopRecord } from "@/lib/server/db";
 import { haversine } from "@/lib/utils/metrics";
 import { FIFTEEN_MINUTE_AVG_WALKING_DISTANCE_METERS } from "@/lib/utils/constants";
@@ -17,7 +17,7 @@ export async function GET(req: Request) {
         );
     }
 
-    const stops: StopRecord[] = db.prepare(`
+    const stops: StopRecord[] = get_database().prepare(`
         SELECT s.* FROM Stops_RTree r 
         JOIN Stops s ON s.id = r.id
         WHERE
