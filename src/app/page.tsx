@@ -126,6 +126,8 @@ export default function Page() {
                         No results yet — submit a location to search.
                     </p>
                 )}
+                
+                <p>View all bus stops at <a href="https://map.ridemetro.org/">map.ridemetro.org/</a>.</p>
             </div>
         </section>
     );
