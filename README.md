@@ -14,7 +14,7 @@ Note for those that try to run this code locally: The SQLITE database used is no
 
 #### Running the Project Locally
 
-Go to the src directory do `npm run dev` or `docker build -t <SOME_NAME> .` then `docker run -p 3000:3000 <SOME_NAME>`. As I've stated in the note above, without the data local queries will fail.
+Go to the src directory and do `npm run dev` or `docker build -t <SOME_NAME> .` then `docker run -p 3000:3000 <SOME_NAME>`. As I've stated in the note above, without the data local queries will fail.
 
 
 #### The Premise
