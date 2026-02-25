@@ -103,7 +103,7 @@ export default function Page() {
 
     return (
         <section className="flex justify-center pt-20">
-            <div>
+            <div className="w-full max-w-md">
                 <h1 className="font-bold text-xl"> <span className="text-red-800">ST</span>ERDOS</h1>
                 <LocationForm lat={lat} long={long} loading={loading} onLatChange={setLat} onLongChange={setLong} address={address} onAddressChange={onAddressChange}
                     onSubmit={(e) => handleLocationSubmit(e, setError, setLoading, setResults, lat, long, address, addressCache.current, setLat, setLong)} onUseCurrentLocation={useCurrentLocation}/>
@@ -127,7 +127,8 @@ export default function Page() {
                     </p>
                 )}
                 
-                <p>View all bus stops at <a href="https://map.ridemetro.org/">map.ridemetro.org/</a>.</p>
+                <p className="text-xs text-center">View all bus stops at <a href="https://map.ridemetro.org/" className="text-blue-400" target="_blank">map.ridemetro.org/</a>.</p>
+                <p className="text-xs text-center">View the project on <a target="_blank" href="https://github.com/KaytchJam/sterdos" className="text-blue-400">Github</a></p>
             </div>
         </section>
     );
