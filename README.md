@@ -5,6 +5,18 @@ Mockup project for calculating the "Bus-Transit-Score" of a particular location 
 
 Note for those that try to run this code locally: The SQLITE database used is not included in the source files here so any latitude-longitude queries will fail. If you'd like me to send the data to you just shoot me an email or something.
 
+#### Primary Dependencies
+
+- NextJS
+- React
+- Tailwind
+- Better-Sqlite
+
+#### Running the Project Locally
+
+Go to the src directory do `npm run dev` or `docker build -t <SOME_NAME> .` then `docker run <SOME_NAME> -p 3000:3000`. As I've stated in the note above, without the data local queries will fail.
+
+
 #### The Premise
 
 Plays off the idea of the "15-minute city." How far do I need to walk to reach a source of public transit, and secondly: how many different sources are close to me?
