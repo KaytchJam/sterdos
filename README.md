@@ -3,6 +3,8 @@ ___
 
 Mockup project for calculating the "Bus-Transit-Score" of a particular location in the Houston Area, where a location is defined by a Latitude-Longitude pair. Along with the score, a list of nearby bus stops (those within 15 minute walking distance, using Haversine metric) are returned to the user. This project was made possible via the Houston METRO API. It was deployed using GCP.
 
+Note for those that try to run this code locally: The SQLITE database used is not included in the source files here so any latitude-longitude queries will fail. If you'd like me to send the data to you just shoot me an email or something.
+
 #### The Premise
 
 Plays off the idea of the "15-minute city." How far do I need to walk to reach a source of public transit, and secondly: how many different sources are close to me?
