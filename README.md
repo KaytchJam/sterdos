@@ -1,7 +1,7 @@
 # STERDOS
 ___
 
-Mockup project for calculating the "Bus-Transit-Score" of a particular location in the Houston Area, where a location is defined by a Latitude-Longitude pair.
+Mockup project for calculating the "Bus-Transit-Score" of a particular location in the Houston Area, where a location is defined by a Latitude-Longitude pair. Along with the score, a list of nearby bus stops (those within 15 minute walking distance, using Haversine metric) are returned to the user. This project was made possible via the Houston METRO API. It was deployed using GCP.
 
 #### The Premise
 
