@@ -127,7 +127,7 @@ export default function Page() {
                     </p>
                 )}
                 
-                <p className="text-xs text-center">View all bus stops at <a href="https://map.ridemetro.org/" className="text-blue-400" target="_blank">map.ridemetro.org/</a>.</p>
+                <p className="text-xs text-center">Route and arrival data provided by permission of METRO. View all bus stops at <a href="https://map.ridemetro.org/" className="text-blue-400" target="_blank">map.ridemetro.org/</a>.</p>
                 <p className="text-xs text-center">View the project on <a target="_blank" href="https://github.com/KaytchJam/sterdos" className="text-blue-400">Github</a></p>
             </div>
         </section>
